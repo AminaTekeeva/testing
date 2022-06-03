@@ -1,0 +1,13 @@
+A = {'a' : 32, 'b' : 2, 'c' : 2, 'd' : 3}
+B = 1
+def search(lists, value):
+    keys = []
+    for key in lists:
+        if(lists[key]==value):
+            keys.append(key)
+    if len (keys)==0:
+        return "Нету ключей"
+    return keys  
+    
+print(search(A,B))
+    
